@@ -1,0 +1,170 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,400,700');
+
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Roboto', sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-weight: 300;
+}
+
+a {
+    text-decoration: none;
+    border-bottom: 2px solid #039BE5;
+    color: black;
+    transition: all 0.2s ease 0s;
+}
+
+a:hover {
+    border-bottom-color: #006DB3;
+}
+
+a.primary, .primary a {
+    color: white;
+}
+
+a.primary:hover, .primary a:hover {
+    border-bottom-color: white;
+}
+
+a.button {
+    padding: 12px 30px;
+    display: inline-block;
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 15px;
+    letter-spacing: 0.05rem;
+    white-space: nowrap;
+    font-weight: 600;
+    border: solid 1px;
+    border-color: black;
+    color: black;
+    border-radius: 3px;
+    transition: all 0.2s ease 0s;
+    margin-bottom: 5%;
+}
+
+a.button:hover {
+    background-color: black;
+    border-color: black;
+    color: white;
+}
+
+a.button.primary {
+    background-color: #039BE5;
+    border-color: #039BE5;
+    color: white;
+}
+
+a.button.primary:hover {
+    background-color: #006DB3;
+    border-color: #006DB3;
+    color: white;
+}
+
+.primary a.button {
+    background-color: #039BE5;
+    border-color: #039BE5;
+    color: white;
+}
+
+.primary a.button:hover {
+    background-color: #006DB3;
+    border-color: #006DB3;
+    color: white;
+}
+
+.container {
+    width: 100%;
+    min-height: fit-content;
+    overflow: hidden; 
+    color: black;
+}
+
+.container.full-viewport {
+    height: 100vh;
+}
+
+.primary.container, .primary .container {
+    background-color: #006DB3;
+    color: white;
+}
+
+.row {
+    clear: both;
+    margin-right: 10%;
+    margin-left: 10%;
+    padding: 8rem 0 8rem;
+}
+
+.row:before,
+.row:after {
+    content:"";
+    display:table;
+}
+
+.row:after {
+    clear:both;
+}
+
+.column, .columns {
+    display: block;
+    float:left;
+    margin: 1% 0 1% 1.6%;
+}
+
+.column:first-child, .columns:first-child {
+    margin-left: 0;
+}
+
+.whole, .one-whole{
+    width: 100%;
+}
+
+.one-half {
+    width: 49.2%;
+}
+
+.two-third, .two-thirds {
+    width: 66.1%;
+}
+
+.one-third {
+    width: 32.2%;
+}
+
+.video-container {
+    width: 100%;
+    position: relative;
+    padding-bottom: 56.25%;
+}
+
+.video-container iframe, .video-container embed, .video-container object {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+}
+
+/* Less than 480 pixel devices are treated as mobile devices */
+
+@media only screen and (max-width: 480px) {
+    .column, .columns {
+        margin: 1% 0 1% 0%;
+        text-align: center;
+    }
+
+    .two-thirds, .two-third, .one-half, .one-third {
+        width: 100%; 
+    }
+ 
+   .row {
+        padding: 5rem 0 5rem;
+        margin-right: 5%;
+        margin-left: 5%;
+    }
+}
