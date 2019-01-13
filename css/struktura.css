@@ -5,7 +5,8 @@ html {
 body {
     margin: 0;
     font-family: "Arial", "Helvetica", sans-serif;
-    background-color: #FFF4EC;
+    background-color: #C4A300;
+    color: FFFFFF;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -57,12 +58,13 @@ input:hover, a.button:hover {
 }
 
 .container.full-viewport {
+    margin-bottom: -1px;
     height: 100vh;
 }
 
 .primary.container, .primary .container {
     background-color: #FFD800;
-    color: #FFF4EC;
+    color: #000000;
 }
 
 .row {
