@@ -57,7 +57,6 @@ input:hover, a.button:hover {
 }
 
 .container.full-viewport {
-    margin-bottom: -1px;
     height: 100vh;
 }
 
